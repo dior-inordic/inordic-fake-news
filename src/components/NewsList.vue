@@ -5,7 +5,7 @@ export default {
   },
   data() {
     return {
-      hello: "Привет"
+      title: "Список новостей"
     };
   },
   setup() {
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <h1>Список новостей</h1>
+    <h1>{{title}}</h1>
 </template>
 
 <style scoped>

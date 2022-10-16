@@ -3,7 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 //Ипортируем компоненты, которые будут отображаться на разных страницах
 import HelloWorld from "../../components/HelloWorld.vue"
 import NewsList from "../../components/NewsList.vue"
-
+import NewsItem from "../../components/NewsItem.vue"
 //Делаю конфигурацию(инструкцию), который показывает определенный компонент, при переходе по определенному пути
 //Например при переходе на / отображаем компонент HelloWorld
 const routes = [
@@ -16,6 +16,12 @@ const routes = [
     path: "/news",
     name: "News",
     component: NewsList
+  },
+  {
+    // 
+    path: "/news/:id",
+    name: "NewsItem",
+    component: NewsItem
   }
 ]
 
